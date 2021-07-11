@@ -682,21 +682,21 @@ void circulo_bresenham(){
 		}
 		
 		telaCord(x+75+xcen,-y+20+ycen);
-	    printf("%c", 254);
-	    telaCord(y+75+xcen,-x+20+ycen);
-	    printf("%c", 254);
-	    telaCord(y+75+xcen,x+20+ycen);
-	    printf("%c", 254);
-	    telaCord(x+75+xcen,y+20+ycen);
-	    printf("%c", 254);
-	    telaCord(-x+75+xcen,y+20+ycen);
-	    printf("%c", 254);
-	    telaCord(-y+75+xcen,x+20+ycen);
-	    printf("%c", 254);
-	    telaCord(-y+75+xcen,-x+20+ycen);
-	    printf("%c", 254);
-	   	telaCord(-x+75+xcen,-y+20+ycen);
-	    printf("%c", 254);
+	        printf("%c", 254);
+	        telaCord(y+75+xcen,-x+20+ycen);
+	        printf("%c", 254);
+	        telaCord(y+75+xcen,x+20+ycen);
+	        printf("%c", 254);
+   	        telaCord(x+75+xcen,y+20+ycen);
+	        printf("%c", 254);
+	        telaCord(-x+75+xcen,y+20+ycen);
+	        printf("%c", 254);
+	        telaCord(-y+75+xcen,x+20+ycen);
+	        printf("%c", 254);
+	        telaCord(-y+75+xcen,-x+20+ycen);
+	        printf("%c", 254);
+	        telaCord(-x+75+xcen,-y+20+ycen);
+	        printf("%c", 254);
 		
 	}
 	
@@ -704,17 +704,17 @@ void circulo_bresenham(){
 	system("pause");
 }
 
-void telaCord (int x, int y) { // funÁ„o que determina a regi„o que ser· utilizada pelas coordenadas
-      COORD tela; // ser· o buffer de tela que iremos criar no console (comeÁa no (0,0) no superior esquerdo)
+void telaCord (int x, int y) { // fun√ß√£o que determina a regi√£o que ser√° utilizada pelas coordenadas
+      COORD tela; // ser√° o buffer de tela que iremos criar no console (come√ßa no (0,0) no superior esquerdo)
 
-      // aqui as coordenadas passadas pelas outras funÁıes achar„o seu lugar no plano cartesiano (no buffer "tela")
+      // aqui as coordenadas passadas pelas outras fun√ß√µes achar√£o seu lugar no plano cartesiano (no buffer "tela")
       tela.X = x; 
       tela.Y = y;
 
-      //aqui È definido um identificador para as cordenadas x,y dentro do buffer de tela do console
+      //aqui √© definido um identificador para as cordenadas x,y dentro do buffer de tela do console
       SetConsoleCursorPosition (GetStdHandle(STD_OUTPUT_HANDLE), tela);
-      /* como est· se utilizando o console padr„o, pode se utilizar o STD_OUTPUT_HANDLE com o GetStdHandle
-      alÈm de referenciar de qual estrutura COORD estamos trabalhando, a "tela"*/
+      /* como est√° se utilizando o console padr√£o, pode se utilizar o STD_OUTPUT_HANDLE com o GetStdHandle
+      al√©m de referenciar de qual estrutura COORD estamos trabalhando, a "tela"*/
 
 }
 
